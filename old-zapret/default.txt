@@ -1,1 +1,0 @@
-general (ALT6).bat 
