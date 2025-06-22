@@ -5,7 +5,7 @@ function Get-AvailableConfigurations {
     $result = @()
     foreach ($file in $files) {
         . $file.FullName
-        $funcName = 'New-' + ($file.BaseName) + 'Configuration'
+        $funcName = 'New-ZapretConfiguration'
         if (Get-Command $funcName -ErrorAction SilentlyContinue) {
             $conf = & $funcName
             $result += $conf

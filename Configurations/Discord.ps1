@@ -1,4 +1,4 @@
-function New-DiscordConfiguration {
+function New-ZapretConfiguration {
     $config = [ZapretConfiguration]::new("Discord")
     $config.Description = "Optimized configuration for Discord"
     $config.GameFilterEnabled = $false
